@@ -44,11 +44,11 @@ class Halaman extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           // children itu array (ada tanda []
-            children: [
-          Icon(Icons.person),
-          SizedBox(width: 10),
-          Icon(Icons.account_balance),
-          SizedBox(width: 5),
+          children: [
+          // Icon(Icons.person),
+          // SizedBox(width: 10),
+          // Icon(Icons.account_balance),
+          // SizedBox(width: 5),
           Text("ini adalah data")
         ],
       )
