@@ -31,14 +31,17 @@ class Halaman extends StatelessWidget {
         title: Text('Halaman Depan'),
         //  ada tanda array atau list
         actions: [
+          Icon(Icons.search),
+          SizedBox(width: 5),
           Icon(Icons.person),
           SizedBox(width: 5),
           Icon(Icons.settings),
           SizedBox(width: 5),
+
         ],
       ),
       body: Container(
-        margin: EdgeInsets.all(5),
+        margin: EdgeInsets.all(5), // Memberi margin di semua sisi
         // width: double.infinity,
         // height: double.infinity,
       // color: Colors.greenAccent,
@@ -54,7 +57,7 @@ class Halaman extends StatelessWidget {
       //     Text("ini adalah data")
       //   ],
       // )
-      padding: EdgeInsets.only(right: 50),
+      padding: EdgeInsets.only(right: 50), // Memberi padding spesifik hanya di sisi tertentu
       decoration: BoxDecoration(
         color: Colors.tealAccent,
         borderRadius: BorderRadius.circular(20),
@@ -72,3 +75,4 @@ class Halaman extends StatelessWidget {
         );
   }
 }
+
