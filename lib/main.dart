@@ -27,7 +27,7 @@ class Halaman extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 222, 44, 151),
+        backgroundColor: Colors.pinkAccent,
         title: Text('Halaman Depan'),
         //  ada tanda array atau list
         actions: [
