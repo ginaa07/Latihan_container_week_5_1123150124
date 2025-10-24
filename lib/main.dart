@@ -38,9 +38,11 @@ class Halaman extends StatelessWidget {
         ],
       ),
       body: Container(
-        width: double.infinity,
-        height: double.infinity,
+        margin: EdgeInsets.all(5),
+        // width: double.infinity,
+        // height: double.infinity,
       // color: Colors.greenAccent,
+      alignment: Alignment.center,
       //   child: Row(
       //     mainAxisAlignment: MainAxisAlignment.center,
       //     // children itu array (ada tanda []
@@ -52,6 +54,7 @@ class Halaman extends StatelessWidget {
       //     Text("ini adalah data")
       //   ],
       // )
+      padding: EdgeInsets.only(right: 50),
       decoration: BoxDecoration(
         color: Colors.tealAccent,
         borderRadius: BorderRadius.circular(20),
@@ -64,7 +67,8 @@ class Halaman extends StatelessWidget {
           ],
         ),
         ),
-        ),
-    );
+        child: Text("ini padding untuk didalam container"),
+          ),
+        );
   }
 }
