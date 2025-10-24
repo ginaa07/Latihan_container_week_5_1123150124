@@ -28,7 +28,8 @@ class Halaman extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.pinkAccent,
-        title: Text('Halaman Depan'),
+        title: Text('Halaman Utama'),
+   
         //  ada tanda array atau list
         actions: [
           Icon(Icons.search),
@@ -41,11 +42,11 @@ class Halaman extends StatelessWidget {
         ],
       ),
       body: Container(
-        margin: EdgeInsets.all(5), // Memberi margin di semua sisi
-        // width: double.infinity,
-        // height: double.infinity,
+        margin: EdgeInsets.all(5), 
+      //   width: double.infinity,
+      //   height: double.infinity,
       // color: Colors.greenAccent,
-      alignment: Alignment.center,
+      alignment: Alignment.center, //properti untuk mengatur posisi(letak)
       //   child: Row(
       //     mainAxisAlignment: MainAxisAlignment.center,
       //     // children itu array (ada tanda []
