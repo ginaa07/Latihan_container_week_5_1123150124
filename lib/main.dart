@@ -40,19 +40,31 @@ class Halaman extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: Colors.greenAccent,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          // children itu array (ada tanda []
-          children: [
-          // Icon(Icons.person),
-          // SizedBox(width: 10),
-          // Icon(Icons.account_balance),
-          // SizedBox(width: 5),
-          Text("ini adalah data")
-        ],
-      )
+      // color: Colors.greenAccent,
+      //   child: Row(
+      //     mainAxisAlignment: MainAxisAlignment.center,
+      //     // children itu array (ada tanda []
+      //     children: [
+      //     // Icon(Icons.person),
+      //     // SizedBox(width: 10),
+      //     // Icon(Icons.account_balance),
+      //     // SizedBox(width: 5),
+      //     Text("ini adalah data")
+      //   ],
+      // )
+      decoration: BoxDecoration(
+        color: Colors.tealAccent,
+        borderRadius: BorderRadius.circular(20),
+        gradient: LinearGradient(
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+          colors: [
+            Colors.pinkAccent,
+            Colors.greenAccent,
+          ],
         ),
-        );
+        ),
+        ),
+    );
   }
 }
