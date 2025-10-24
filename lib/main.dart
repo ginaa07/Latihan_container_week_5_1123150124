@@ -29,6 +29,13 @@ class Halaman extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 222, 44, 151),
         title: Text('Halaman Depan'),
+        //  ada tanda array atau list
+        actions: [
+          Icon(Icons.person),
+          SizedBox(width: 5),
+          Icon(Icons.settings),
+          SizedBox(width: 5),
+        ],
       ),
     );
   }
