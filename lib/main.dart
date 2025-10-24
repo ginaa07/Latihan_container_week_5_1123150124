@@ -71,7 +71,7 @@ class Halaman extends StatelessWidget {
           ],
         ),
         ),
-        child: Text("ini padding untuk didalam container"),
+        child: Text("Decorated Container"),
           ),
         );
   }
