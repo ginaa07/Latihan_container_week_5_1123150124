@@ -37,6 +37,11 @@ class Halaman extends StatelessWidget {
           SizedBox(width: 5),
         ],
       ),
-    );
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        color: Colors.greenAccent,
+        ),
+      );
   }
 }
