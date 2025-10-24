@@ -14,6 +14,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
     title: "Latihan Container",
     debugShowCheckedModeBanner: false, 
+    home: Halaman(),
+    );
+  }
+}
+
+//page (yg dipanggil dari myapp)
+class Halaman extends StatelessWidget {
+  const Halaman({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 222, 44, 151),
+        title: Text('Halaman Depan'),
+      ),
     );
   }
 }
