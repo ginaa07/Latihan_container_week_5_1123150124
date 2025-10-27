@@ -84,7 +84,7 @@ class Halaman extends StatelessWidget {
             context: context,
             builder: (BuildContext context) {
               return AlertDialog(
-                title: Text("Holaa Regina Safarina"),
+                title: Text("Holaa, Regina Safarina"),
                 content: Text("Semoga Harimu Menyenangkan Nona Cantik"),
                 actions: [
                   TextButton(
