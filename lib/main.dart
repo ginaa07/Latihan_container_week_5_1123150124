@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    title: "Latihan Container",
+    title: "Latihan Container Regina Safarina",
     debugShowCheckedModeBanner: false, 
     home: Halaman(),
     );
@@ -59,11 +59,12 @@ class Halaman extends StatelessWidget {
       //     Text("ini adalah data")
       //   ],
       // )
+      
       padding: EdgeInsets.only(right: 50), // Memberi padding spesifik hanya di sisi tertentu
       decoration: BoxDecoration(
-        color: Colors.tealAccent,
-        borderRadius: BorderRadius.circular(20),
-        gradient: LinearGradient(
+      color: Colors.tealAccent,
+      borderRadius: BorderRadius.circular(20),
+      gradient: LinearGradient(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
           colors: [
@@ -74,7 +75,32 @@ class Halaman extends StatelessWidget {
         ),
         child: Text("Decorated Container"),
           ),
-        );
+          
+      // tombol untuk alert dialog
+      floatingActionButton: FloatingActionButton(
+        backgroundColor:  Colors.pinkAccent,
+        onPressed: () {
+          showDialog(
+            context: context,
+            builder: (BuildContext context) {
+              return AlertDialog(
+                title: Text("Holaa Regina Safarina"),
+                content: Text("Semoga Harimu Menyenangkan Nona Cantik"),
+                actions: [
+                  TextButton(
+                    child: Text("Tutup"),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                ],
+              );
+            },
+          );
+        },
+        child: Icon(Icons.favorite),
+        ),
+    );
   }
 }
 
