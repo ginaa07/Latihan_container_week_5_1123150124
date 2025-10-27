@@ -73,7 +73,7 @@ class Halaman extends StatelessWidget {
           ],
         ),
         ),
-        child: Text("Decorated Container"),
+        child: Text("Regina safarina"),
           ),
           
       // tombol untuk alert dialog
